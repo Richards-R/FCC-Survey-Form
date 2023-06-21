@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>freeCodeCamp Survey Formd</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="survey-form\favicon_r_blue.ico">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form" method="post" action='https://reonssurvey.freecodecamp.org'>
+    <fieldset>
+      <label id="name-label" for="name">Name: 
+        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+      </label>
+      <label id="email-label" for="email">Email: 
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+      </label>
+      <label id="number-label" for="number">Age (optional): 
+        <input id="number" type="number" name="number" min="20" max="120" placeholder="Select your age" />
+      </label>
+      <label for="dropdown">Which option best describes your current role?
+        <select id="dropdown" name="dropdown">
+          <option value="">(Select current role)</option>
+          <option value="1">Student</option>
+          <option value="2">Fulltime job</option>
+          <option value="3">Fulltime learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="radio">Would you recommend freeCodeCamp to a friend?
+      <label for="definitely"><input id="definitely" type="radio" name="recommendation" class="inline" value="1"/> Definitely</label>
+      <label for="maybe"><input id="business-account" type="radio" name="recommendation" class="inline" value="2"/> Maybe</label>
+      <label for="never"><input id="business-account" type="radio" name="recommendation" class="inline" value="3"/> Never</label>
+     </label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">What is your favorite feature of freeCodeCamp?
+        <select id="dropdown" name="feature">
+          <option value="">(Select an option)</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Other</option>
+       </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="value">What would you like to see improved? (Check all that apply)
+        <label> 
+          <input id="value" value="1" type="checkbox" name="value" class="inline" /> Front-end Projects 
+        </label>
+        <label> 
+          <input id="value" value="2" type="checkbox" name="value" class="inline" /> Back-end Projects 
+        </label>
+        <label> 
+          <input id="value" value="3" type="checkbox" name="value" class="inline" /> Data Visualization 
+        </label>
+        <label> 
+          <input id="value" value="4" type="checkbox" name="value" class="inline" /> Challenges 
+        </label>
+        <label> 
+          <input id="value" value="5" type="checkbox" name="value" class="inline" /> Open Source Community 
+        </label>
+        </label>
+    </fieldset>
+    <fieldset>
+      <label for="comment">Any comments or suggestions?
+        <textarea id="comment" name="comment" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+
+</html>
+
